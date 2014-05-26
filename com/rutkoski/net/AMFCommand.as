@@ -66,9 +66,11 @@ public class AMFCommand
       trace(this, status);
     }
 
-    throw new Error(status.description + "\nin "
+		for (var i:String in status) 
+			trace(i + ': ' + status[i]);
+    /*throw new Error(status.description + "\nin "
       + status.details + ':' + status.line,
-      status.code);
+      status.code);*/
   }
 
   protected function amf_result(data:*):void
