@@ -1,4 +1,4 @@
-package com.devcafe.util
+package com.rutkoski.util
 {
 	import flash.geom.Point;
 	
